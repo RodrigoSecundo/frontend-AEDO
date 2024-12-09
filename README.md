@@ -38,7 +38,7 @@ O frontend contém um arquivo HTML (index.html) que exibe a lista de hospitais e
 
 # Projeto Frontend - Sistema de doação de órgãos
 
-Este projeto é uma interface de administração de hospitais, construída com *HTML, **CSS, e **JavaScript*, que interage com o backend PHP e MySQL.
+Este projeto é uma interface de doação de órgãos, construída com *HTML, **CSS, e **JavaScript*, que interage com o backend PHP e MySQL.
 
 ## Tecnologias Utilizadas
 
