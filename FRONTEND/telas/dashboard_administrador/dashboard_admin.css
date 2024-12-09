@@ -1,0 +1,178 @@
+/* Reset Padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    height: 100vh; /* Define altura total da tela */
+    background: url('R:/Documentos/Faculdade/Lixeira/AEDO/FRONTEND/assets/planofundo.jpeg') no-repeat center center fixed;
+    background-size: cover; /* Garante que a imagem preencha a tela */
+    overflow: auto; /* Ativa barra de rolagem automática */
+}
+
+/* Cabeçalho */
+.header-adm {
+    width: 100%; /* Ajuste do tamanho para ocupar a largura da viewport */
+    background: linear-gradient(to right, #00aabc, #365932, #71c890, #beda56); /* Gradiente aplicado */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Fixado no topo da página */
+    top: 0; /* Mantém no topo */
+    left: 0;
+    z-index: 1; /* Garante que o cabeçalho esteja acima de outros elementos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-adm img {
+    max-width: 150px; /* Ajusta o tamanho da imagem */
+    height: auto; /* Mantém a proporção da logo */
+}
+
+/* Contêiner de administração */
+.container-adm {
+    background-color: #fff; /* Fundo branco sólido */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    margin: 100px auto 20px; /* Adiciona margem no topo para compensar o cabeçalho fixo */
+}
+
+.container-adm h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+/* Estilo do formulário */
+.form-adm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-adm label {
+    font-weight: bold;
+    text-align: left;
+    color: #333;
+}
+
+.form-adm input,
+.form-adm select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.form-adm input:focus,
+.form-adm select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Botão de administração */
+.button-adm {
+    background: linear-gradient(to bottom, #00aabc, #71c890); /* Gradiente aplicado ao botão */
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.button-admdois{
+    background: linear-gradient(to bottom, #00aabc, #71c890); /* Gradiente aplicado ao botão */
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.button-admtres{
+    background: linear-gradient(to bottom, #00aabc, #71c890); /* Gradiente aplicado ao botão */
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease; 
+}
+
+.button-adm:hover {
+    background: linear-gradient(to bottom, #71c890, #365932); /* Alteração suave no gradiente ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.button-admdois:hover{
+    background: linear-gradient(to bottom, #71c890, #365932); /* Alteração suave no gradiente ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.button-admtres:hover{
+    background: linear-gradient(to bottom, #71c890, #365932); /* Alteração suave no gradiente ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.button-adm:active {
+    background: #beda56; /* Cor sólida ao pressionar o botão */
+    transform: scale(0.95); /* Leve redução de escala ao pressionar */
+}
+
+.button-admdois:active{
+    background: #beda56; /* Cor sólida ao pressionar o botão */
+    transform: scale(0.95); /* Leve redução de escala ao pressionar */
+}
+
+.button-admtres:active{
+    background: #beda56; /* Cor sólida ao pressionar o botão */
+    transform: scale(0.95); /* Leve redução de escala ao pressionar */
+}
+
+/* Modificadores de botões */
+.button-adm.danger {
+    background: linear-gradient(to bottom, #ff5f5f, #ff3d3d); /* Gradiente para ações perigosas */
+}
+
+.button-admdois.danger{
+    background: linear-gradient(to bottom, #ff5f5f, #ff3d3d); /* Gradiente para ações perigosas */
+}
+
+.button-admtres.danger{
+    background: linear-gradient(to bottom, #ff5f5f, #ff3d3d); /* Gradiente para ações perigosas */
+}
+
+.button-adm.register {
+    background: linear-gradient(to bottom, #00c0ff, #0089c9); /* Gradiente para ações de registro */
+}
+
+.button-admdois.register{
+    background: linear-gradient(to bottom, #00c0ff, #0089c9); /* Gradiente para ações de registro */
+}
+
+.button-admtres.register{
+    background: linear-gradient(to bottom, #00c0ff, #0089c9); /* Gradiente para ações de registro */
+}
+
+/* Imagem de fundo */
+.background-adm {
+    display: none; /* Removida do layout visível */
+}

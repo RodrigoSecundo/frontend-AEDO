@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Hospital</title>
+    <link rel="stylesheet" href="cadastro_hospital.css">
+</head>
+
+<body>
+    <header class="header-cadastroH">
+        <div class="logo-cadastroH">
+            <img src="R:\Documentos\Faculdade\Lixeira\AEDO\FRONTEND\assets\logo.jpeg">
+        </div>
+    </header>
+    <div class="container-cadastroH">
+        <h1>Cadastro de Hospital</h1>
+        <form class="form-cadastroH">
+            <label for="licança">Licença:</label>
+            <input type="text" id="licença" name="licença" placeholder="Digite a licença" required>
+
+            <label for="número">Número principal:</label>
+            <input type="password" id="Número" name="Número" placeholder="(62) 91234-5678" required>
+
+            <label for="senha">Endereço:</label>
+            <input type="text" id="Endereço" name="Endereço" placeholder="Rua" required>
+            <input type="text" id="Endereço" name="Endereço" placeholder="Bairro, Ponto de Referência" required>
+            <input type="password" id="Endereço" name="Endereço" placeholder="Número do prédio" required>
+
+            <label for="plano">Plano de Saúde:</label>
+            <select id="plano" name="plano" required>
+                <option value="" disabled selected>Selecione o plano de Saúde</option>
+                <option value="sus">SUS</option>
+                <option value="ipasgo">Ipasgo</option>
+                <option value="unimed">Unimed</option>
+                <option value="particular">Particular</option>
+            </select>
+
+            <button class="button-cadastroH" type="submit">Cadastrar</button>
+        </form>
+    </div>
+    <main>
+        <div>
+            <img src="R:\Documentos\Faculdade\Lixeira\AEDO\FRONTEND\assets\planofundo.jpeg"
+                class="background-cadastroH">
+        </div>
+    </main>
+</body>
+
+</html>

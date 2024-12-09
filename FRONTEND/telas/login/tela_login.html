@@ -1,0 +1,48 @@
+Tela Login html:
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="tela_login.css">
+</head>
+
+<body>
+    <header class="header-login">
+        <div class="logo-login">
+            <img src="R:\Documentos\Faculdade\Lixeira\AEDO\FRONTEND\assets\logo.jpeg">
+        </div>
+    </header>
+    <div class="container-login">
+        <h1>Login</h1>
+        <form class="form-login">
+            <label for="CPF">CPF:</label><br>
+            <input type="password" id="CPF" name="CPF" placeholder="Digite seu CPF" required>
+
+            <label class="senha" for="password">Senha:</label><br>
+            <input type="password" id="password" name="password" placeholder="Digite sua Senha" required>
+
+            <label class="pefil" for="perfil">Perfil:</label>
+            <select id="perfil" name="perfil" required>
+                <option value="" disabled selected>Selecione o perfil</option>
+                <option value="administrador">Administrador</option>
+                <option value="receptor">Receptor</option>
+                <option value="doador">Doador</option>
+            </select>
+
+            <button class="button-login" type="submit">Entrar</button>
+        </form>
+        <p><a href="/cadastro">Não tem uma conta? Cadastre-se</a></p>
+    </div>
+    <main>
+        <div>
+            <img src="R:\Documentos\Faculdade\Lixeira\AEDO\FRONTEND\assets\planofundo.jpeg" class="background-login">
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+/* Reset Padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    height: 100vh; /* Define altura total da tela */
+    background: url('R:/Documentos/Faculdade/Lixeira/AEDO/FRONTEND/assets/planofundo.jpeg') no-repeat center center fixed;
+    background-size: cover; /* Garante que a imagem preencha a tela */
+    overflow: auto; /* Ativa barra de rolagem automática */
+}
+
+/* Cabeçalho */
+.header-cadastroH {
+    width: 100%; /* Ajuste do tamanho para ocupar a largura da viewport */
+    background: linear-gradient(to right, #00aabc, #365932, #71c890, #beda56); /* Gradiente aplicado */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Fixado no topo da página */
+    top: 0; /* Mantém no topo */
+    left: 0;
+    z-index: 1; /* Garante que o cabeçalho esteja acima de outros elementos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-cadastroH img {
+    max-width: 150px; /* Ajusta o tamanho da imagem */
+    height: auto; /* Mantém a proporção da logo */
+}
+
+/* Contêiner de cadastro */
+.container-cadastroH {
+    background-color: #fff; /* Fundo branco sólido */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    margin: 100px auto 20px; /* Adiciona margem no topo para compensar o cabeçalho fixo */
+}
+
+.container-cadastroH h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+/* Estilo do formulário */
+.form-cadastroH {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    text-align: left;
+    color: #333;
+}
+
+form input,
+form select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Botão de cadastro */
+.button-cadastroH {
+    background: linear-gradient(to bottom, #00aabc, #71c890); /* Gradiente aplicado ao botão */
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.button-cadastroH:hover {
+    background: linear-gradient(to bottom, #71c890, #365932); /* Alteração suave no gradiente ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.button-cadastroH:active {
+    background: #beda56; /* Cor sólida ao pressionar o botão */
+    transform: scale(0.95); /* Leve redução de escala ao pressionar */
+}
+
+/* Imagem de fundo */
+.background-cadastroH {
+    display: none; /* Removida do layout visível */
+}

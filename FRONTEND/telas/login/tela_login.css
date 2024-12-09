@@ -1,0 +1,146 @@
+/* Reset Padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    height: 100vh;
+    background: url('R:/Documentos/Faculdade/Lixeira/AEDO/FRONTEND/assets/planofundo.jpeg') no-repeat center center fixed;
+    background-size: cover; /* Garante que a imagem preencha a tela */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cabeçalho */
+.header-login {
+    width: 100%;
+    background: linear-gradient(to right, #00aabc, #365932, #71c890, #beda56); /* Gradiente aplicado */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10; /* Garante que o header esteja acima do conteúdo */
+}
+
+.logo-login img {
+    max-width: 150px; /* Ajusta o tamanho da logo */
+    height: auto; /* Mantém a proporção da logo */
+}
+
+/* Contêiner de login */
+.container-login {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px; /* Limita o tamanho máximo */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Título */
+.container-login h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+/* Estilo do formulário */
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1px; /* Diminui o espaço entre os campos */
+    align-items: flex-start; /* Alinha os rótulos e campos à esquerda */
+}
+
+.form-login label {
+    font-weight: bold;
+    text-align: left;
+    color: #333;
+}
+
+form input,
+form select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.pefil{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.senha{
+    margin-top: 15px;
+}
+
+.form-login input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.form-login input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Botão de login */
+.button-login {
+    background: linear-gradient(to bottom, #00aabc, #71c890); /* Gradiente aplicado ao botão */
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 100%; /* Ocupa todo o espaço disponível */
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.button-login:hover {
+    background: linear-gradient(to bottom, #71c890, #365932); /* Alteração suave no gradiente ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.button-login:active {
+    background: #beda56; /* Cor sólida ao pressionar o botão */
+    transform: scale(0.95); /* Leve redução de escala ao pressionar */
+}
+
+/* Link de recuperação de senha */
+.container-login p a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+.container-login p a:hover {
+    color: #0056b3;
+}
+
+/* Ajustes da imagem de fundo */
+.background-login {
+    display: none; /* Oculta a imagem de fundo no main */
+}
