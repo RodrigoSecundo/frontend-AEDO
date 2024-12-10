@@ -1,13 +1,21 @@
 # Projeto Frontend - Sistema de doação de órgãos
 
 Grupo:
+
 ● Rodrigo Secundo Araújo (2210189);
+
 ● Alan Raique Soares Nunes (2210559);
+
 ● Caio Gomes Motta (2210618);
+
 ● Victor Souza Silva (2211991);
+
 ● Abner Dimitri Maciel de Oliveira (2210948);
+
 ● Vitor Goulão Lopes (2210044);
+
 ● Davi Queiroz de Oliveira (2210416);
+
 ● Ryan Henrique Costa (2210200).
 
 Este projeto é uma interface de doação de órgaõs, construída com *HTML, **CSS, e **JavaScript*, que interage com o backend PHP e MySQL.
